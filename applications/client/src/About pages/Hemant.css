@@ -1,0 +1,39 @@
+body {
+    box-sizing: border-box;
+}
+
+.about {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    width: 550px;
+    justify-content: space-around;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+
+.image img {
+    height: 350px;
+    width: 320px;
+}
+
+.basic-info {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+#name {
+    font-size: 24px;
+}
+
+#role {
+    font-weight: 100;
+}
+
+.basic-info h3 {
+    text-align: left;
+}

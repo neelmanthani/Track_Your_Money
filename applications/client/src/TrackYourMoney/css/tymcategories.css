@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+.main-container-home {
+  padding: 0;
+  background-color: var(--secondary-bg-color);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 377px;
+  height: 100vh;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.settings {
+  margin-left: 10px !important;
+}
+
+.settings img {
+  height: 45px;
+  width: 45px;
+}
+
+.mainSection {
+  background-color: #fff;
+  border-radius: 12px;
+  /* padding: 5px; */
+  padding-left: 10px;
+  padding-bottom: 50px;
+}
+
+.fieldset {
+  position: relative;
+}
+
+.fieldset h1 {
+  position: absolute;
+  top: 0;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  margin: -15px 0 0 -0.5rem; /* half of font-size up top */
+  background: #fff;
+  /* padding: 0 1.5rem; */
+  margin-left: 10px;
+}
+
+.add_category_btn {
+  background-color: var(--main-btn-color);
+  color: white;
+  width: 70px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 0 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+}
+
+.add_category_btn:hover {
+  cursor: pointer;
+  border: 1px solid #cd5534;
+  color: var(--main-btn-color);
+  background-color: white;
+  transition: 300ms;
+}
+
+input[type="radio"] {
+  padding: 0.3em;
+  -webkit-appearance: none;
+  outline: 1px solid black;
+  /* outline-offset: 0.1em; */
+}
+
+input[type="radio"]:checked {
+  display: inline-block;
+  background-color: #dd4a25;
+}
+
+#newCatInput {
+  background-color: #c7dfd7;
+  width: 200px;
+  height: 45px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  outline: inherit;
+  padding-left: 10px;
+  font-size: 22px;
+  color: #8b9a96;
+}
+
+#newCatInput::placeholder {
+  font-size: 22px;
+  color: #8b9a96;
+}
+
+.verticalHr {
+  display: "inline-block" !important;
+  background-color: black;
+  width: 1px;
+  height: 100%;
+}

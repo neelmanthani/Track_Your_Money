@@ -1,0 +1,22 @@
+import { useEffect, useState } from 'react';
+import './App.css';
+
+function Home() {
+
+    const [backendData, setBackendData] = useState([{}])
+
+    useEffect(() => {
+        fetch("https://csc.csc648team06.com/api/users").then(
+            response => response.json()
+        ).then(
+            data => {
+                setBackendData(data)
+            }
+        )
+    }, [])
+    console.log('    return (
+        <h1>This is the list: {backendData.user}</h1>
+    );
+}
+
+export default Home;

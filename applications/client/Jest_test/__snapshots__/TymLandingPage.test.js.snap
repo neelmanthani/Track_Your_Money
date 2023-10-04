@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changes the class when hovered 1`] = `
+<div
+  className="main-container-landing"
+>
+  <section
+    className="title"
+  >
+    <h3>
+      Track Your Money
+    </h3>
+  </section>
+  <section
+    className="hero"
+  >
+    <h2>
+       Take Control Of your money
+    </h2>
+    <p>
+      Keep track of your small expenses to keep your financial life in track.
+    </p>
+  </section>
+  <section
+    className="main-button login_buttons"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Log In
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Sign Up
+    </button>
+  </section>
+</div>
+`;
