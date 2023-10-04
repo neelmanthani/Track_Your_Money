@@ -1,0 +1,110 @@
+:root {
+    --main-bg-color: #357960;
+    --main-btn-color: #CD5534;
+    --secondary-bg-color: #CCDED7;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.main-button button {
+    background-color: var(--main-btn-color);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+}
+
+.main-button button:hover {
+    cursor: pointer;
+    border: 1px solid #CD5534;
+    color: var(--main-btn-color);
+    background-color: white;
+    transition: 300ms;
+}
+
+.main-container-landing,
+.main-container-sign-up,
+.main-container-log-in {
+    background-color: var(--main-bg-color);
+    width: 377px;
+    height: 100vh;
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title h3 {
+    font-family: Avenir;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 38px;
+    text-align: center;
+    margin: 5px 0 0;
+}
+
+.hero {
+    margin-left: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hero h2 {
+    font-family: Gill Sans;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 110px;
+    margin-bottom: 0;
+}
+
+.hero p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+}
+
+.login_buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .login_buttons button {
+    background-color: var(--main-btn-color);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+
+} */
+
+/* .login_buttons button:hover {
+    cursor: pointer;
+    border: 1px solid #CD5534;
+    color: var(--main-btn-color);
+    background-color: white;
+    transition: 300ms;
+
+} */

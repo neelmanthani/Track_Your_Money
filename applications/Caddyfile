@@ -1,0 +1,4 @@
+csc.csc648team06.com {
+  reverse_proxy http://localhost:3000
+  reverse_proxy /api* http://localhost:3001
+}

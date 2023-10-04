@@ -1,0 +1,56 @@
+.sign-up-card,
+.log-in-card {
+    padding: 0;
+    background-color: var(--secondary-bg-color);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 377px;
+    height: 550px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.sign-up,
+.log-in {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}
+
+.email,
+.password {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-card label,
+.log-in-card label {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.email input,
+.password input {
+    width: 320px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+.offers {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    margin-top: 30px;
+
+}

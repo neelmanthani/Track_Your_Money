@@ -1,0 +1,373 @@
+:root {
+    --main-bg-color: #357960;
+    --main-btn-color: #CD5534;
+    --secondary-bg-color: #CCDED7;
+}
+
+body {
+    background-color: white;
+
+}
+
+button:hover,
+img:hover {
+    cursor: pointer;
+}
+
+
+.main-container-home {
+    padding: 0;
+    background-color: var(--secondary-bg-color);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 377px;
+    height: 100vh;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.month {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 200px;
+
+}
+
+.month img {
+    height: 20px;
+    width: 20 px;
+}
+
+.month h3 {
+    padding: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.overview-card {
+    background-color: var(--main-bg-color);
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 15px;
+}
+
+.income-expenses {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.savings,
+.income,
+.expenses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.savings h3,
+.income h4,
+.expenses h4 {
+    margin: 10px auto 0;
+}
+
+.savings h2 {
+    margin: 10px auto;
+}
+
+
+.income-expense-btn {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.income-btn button,
+.expenses-btn button,
+.income-button button,
+.expenses-button button {
+
+    height: 50px;
+    width: 120px;
+    padding: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    border: 1px solid black;
+}
+
+
+.expenses-btn {
+    border-radius: 0 15px 15px 15px;
+    z-index: 0;
+
+}
+
+.expenses-btn button {
+    color: white;
+    border-radius: 15px;
+    background-color: var(--main-btn-color);
+
+}
+
+.income-btn button {
+    border-radius: 0 15px 15px 0;
+    margin-left: -15px;
+}
+
+.expenses-button button {
+    border-radius: 15px 0px 0px 15px;
+    margin-right: -15px;
+}
+
+.income-button button {
+    color: white;
+    border-radius: 15px;
+    background-color: var(--main-btn-color);
+}
+
+.settings img {
+    height: 25px;
+    width: 25px;
+}
+
+.settings {
+    margin-left: 40px;
+}
+
+.transactions,
+.transaction-header,
+.transaction-list,
+.transaction-list .one,
+.transaction-list .two,
+.transaction-list .three,
+.transaction-list .four {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.transaction-header {
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.transaction-header p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-decoration: underline;
+}
+
+.transactions,
+.transaction-list {
+    flex-direction: column;
+}
+
+.transaction-list .one,
+.transaction-list .two,
+.transaction-list .three,
+.transaction-list .four {
+    background-color: white;
+    margin: 0 auto 15px;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.transaction-list img {
+    height: 25px;
+    width: 25px;
+}
+
+.transaction-list:hover {
+    cursor: pointer;
+}
+
+.transaction-list h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+
+.transaction-list .amount {
+    margin-left: 40px;
+}
+
+.header {
+    margin-left: 20px;
+}
+
+/* *********************  */
+/* *********************  */
+/* Navbar start */
+
+.ham-menu {
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu-bars {
+    margin-left: 1rem;
+    font-size: 2rem;
+    background: none;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 21px;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    bottom: 21px;
+    transition: all 900ms step-start;
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+.active {
+    left: auto;
+    transition: all 900ms step-end;
+    width: auto;
+    z-index: 1;
+
+}
+
+.navbar .month {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .month h3 {
+    font-size: 1.2rem;
+}
+
+
+
+.nav-text {
+    padding: 5px;
+    list-style: none;
+    height: 60px;
+
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    width: 65%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.nav-text a:hover,
+.nav-text a:active {
+    background-color: var(--main-btn-color);
+
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+.navbar-toggle {
+    background-color: var(--main-bg-color);
+    /* width: 100%; */
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    /* align-items: center; */
+    margin-left: 100px;
+}
+
+/* Navbar end  */
+
+.signOut {
+    padding: 5px;
+    list-style: none;
+    height: 60px;
+
+}
+.signOut button{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border-radius: 4px; */
+    border:none;
+    width: 65%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+.signOut button:hover,
+.signOut button:active {
+    background-color: var(--main-btn-color);
+
+} 
+
+
+/* Sidebar  */
+
+.log-out-button {
+    background-color: var(--main-btn-color);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+}
+
+.log-out-button:hover {
+    cursor: pointer;
+    border: 1px solid #CD5534;
+    color: var(--main-btn-color);
+    background-color: white;
+    transition: 300ms;
+}
+
+
+/* End side bar  */
